@@ -1,0 +1,24 @@
+{
+    "name": "react-cli",
+    "version": "1.0.0",
+    "description": "Simple CLI for creating React Components",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "react",
+        "cli"
+    ],
+    "author": "feissn",
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^5.2.0",
+        "commander": "^10.0.0",
+        "conf": "^11.0.1"
+    },
+    "type": "module",
+    "bin": {
+        "rec": "./index.js"
+    }
+}
