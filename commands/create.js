@@ -18,7 +18,7 @@ type {{ComponentName}}Props = {
 
 const {{ComponentName}}: FC<{{ComponentName}}Props> = ({}) => {
   return (
-    <div class='{{ComponentName}}'></div>
+    <div className='{{ComponentName}}'></div>
   )
 }
 
