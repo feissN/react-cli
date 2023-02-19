@@ -12,13 +12,13 @@ const createComponent = (componentPath) => {
     const baseComponentString = `import { FC } from 'react';
 import "./{{ComponentName}}.scss";
 
-type {{ComponentName}}Props = {
+interface {{ComponentName}}Props extends React.HTMLAttributes<HTMLDivElement> {
 
 }
 
-const {{ComponentName}}: FC<{{ComponentName}}Props> = ({}) => {
+const {{ComponentName}}: FC<{{ComponentName}}Props> = ({ ...rest }) => {
   return (
-    <div className='{{ComponentName}}'></div>
+    <div {...rest} className={"{{ComponentName}} " + rest.className}></div>
   )
 }
 
